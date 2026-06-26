@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CrushieCakes
+</title>
+
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Poppins", Arial, sans-serif;
+        background: linear-gradient(135deg, #ffd6e7, #fff1f7);
+        overflow: hidden;
+    }
+
+    .card {
+        background: white;
+        width: 350px;
+        padding: 30px;
+        border-radius: 25px;
+        text-align: center;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    @keyframes float {
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+
+    h1 {
+        color: #ff6b9d;
+        font-size: 28px;
+    }
+
+    p {
+        color: #555;
+        line-height: 1.6;
+        font-size: 16px;
+    }
+
+    button {
+        margin-top: 15px;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 20px;
+        background: #ff8fb7;
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background: #ff5f98;
+        transform: scale(1.05);
+    }
+
+    .heart {
+        font-size: 40px;
+        animation: beat 1s infinite;
+    }
+
+    @keyframes beat {
+        50% {
+            transform: scale(1.2);
+        }
+    }
+
+    #message {
+        margin-top: 20px;
+        color: #ff6b9d;
+        font-weight: bold;
+    }
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+    <h1>Hi po! hehe</h1>
+
+    <p>
+        Gusto ko lang sabihin na mag-aral ka nang mabuti at huwag mong kalimutan na kaya mo yan. Kahit may mga pagsubok, patuloy ka lang at maniwala sa sarili mo.
+    </p>
+
+    <p>
+        Keep chasing your dreams, keep smiling, and always believe
+        in yourself. Someone out there is cheering for you (ako yun boss). 
+    </p>
+
+    <button onclick="showMessage()">
+        Pindutin moko
+    </button>
+
+    <div id="message"></div>
+
+</div>
+
+
+<script>
+function showMessage() {
+    document.getElementById("message").innerHTML =
+    "You deserve happiness and good things. Wag mag pa-presssure sa acads! >.<";
+}
+</script>
+
+</body>
+</html>
